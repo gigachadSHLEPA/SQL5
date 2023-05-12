@@ -1,0 +1,41 @@
+﻿<Window
+    x:Class="SQL5.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:gif="http://wpfanimatedgif.codeplex.com"
+    xmlns:local="clr-namespace:SQL5"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="870"
+    Height="388"
+    AllowsTransparency="True"
+    Background="Transparent"
+    ResizeMode="NoResize"
+    WindowStartupLocation="CenterScreen"
+    WindowStyle="None"
+    mc:Ignorable="d">
+    <Border CornerRadius="30">
+        <Grid >
+            
+                <Image gif:ImageBehavior.AnimatedSource="Images/cyberpuk.gif" gif:ImageBehavior.RepeatBehavior="Forever" />
+            
+            <Border
+            Width="500"
+            Height="300"
+            Margin="75,44,295,44"
+            Background="White"
+            CornerRadius="20"
+            Effect="{StaticResource MaterialDesignElevationShadow24}">
+
+                <TextBlock
+                Foreground="Black" FontSize="30"
+                Style="{StaticResource TxtFont1}"
+                Text="Authentication" Margin="140,30,140,236" />
+
+            </Border>
+        </Grid>
+    </Border>
+   
+</Window>
