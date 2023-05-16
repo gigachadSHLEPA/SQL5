@@ -18,9 +18,9 @@
     mc:Ignorable="d">
     <Border CornerRadius="30">
         <Grid >
-            
-                <Image gif:ImageBehavior.AnimatedSource="Images/cyberpuk.gif" gif:ImageBehavior.RepeatBehavior="Forever" />
-            
+
+            <Image gif:ImageBehavior.AnimatedSource="Images/cyberpuk.gif" gif:ImageBehavior.RepeatBehavior="Forever" />
+
             <Border
             Width="500"
             Height="300"
@@ -28,14 +28,56 @@
             Background="White"
             CornerRadius="20"
             Effect="{StaticResource MaterialDesignElevationShadow24}">
+                <Grid>
 
-                <TextBlock
+
+                    <TextBlock
                 Foreground="Black" FontSize="30"
                 Style="{StaticResource TxtFont1}"
                 Text="Authentication" Margin="140,30,140,236" />
+                    <TextBlock FontSize="20" Foreground="Purple" Text="Email" Style="{StaticResource TxtFont1}" Margin="55,103,389,164">
+                        <TextBlock.Triggers>
+                            <EventTrigger RoutedEvent="TextBlock.Loaded">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation
+                                    Storyboard.Target="{Binding ElementName = MyFadingText}" 
+                                    Storyboard.TargetProperty="(TextBlock.Opacity)"
+                                    From="1" To="0.7" Duration="0:0:0.75" AutoReverse="True" RepeatBehavior="Forever"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </TextBlock.Triggers>
+                    </TextBlock>
+                    <TextBlock FontSize="20" Foreground="Purple" Text="Password" Style="{StaticResource TxtFont1}" Margin="55,141,346,126">
+                        <TextBlock.Triggers>
+                            <EventTrigger RoutedEvent="TextBlock.Loaded">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation
+                                    Storyboard.Target="{Binding ElementName = MyFadingText}" 
+                                    Storyboard.TargetProperty="(TextBlock.Opacity)"
+                                    From="1" To="0.7" Duration="0:0:0.8" AutoReverse="True" RepeatBehavior="Forever"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </TextBlock.Triggers>
+                    </TextBlock>
+                    <TextBox Margin="111,103,10,180" BorderThickness="0" x:Name="TB" FontSize="19" Style="{StaticResource TxtFont3}" 
+                             />
+                    <TextBox Margin="154,140,186,142" FontSize="20">
+
+                    </TextBox>
+
+
+
+
+                </Grid>
+
+
 
             </Border>
         </Grid>
     </Border>
-   
+
 </Window>

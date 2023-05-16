@@ -2,4 +2,10 @@
     <Style TargetType="TextBlock" x:Key="TxtFont1">
         <Setter Property="TextElement.FontFamily" Value="/fonts/#Retro Typo"/>
     </Style>
+    <Style TargetType="TextBox" x:Key="TxtFont2">
+        <Setter Property="TextElement.FontFamily" Value="/fonts/#Retro Typo"/>
+    </Style>
+    <Style TargetType="TextBox" x:Key="TxtFont3">
+        <Setter Property="TextElement.FontFamily" Value="/fonts/#Ankh Sanctuary"/>
+    </Style>
 </ResourceDictionary>
