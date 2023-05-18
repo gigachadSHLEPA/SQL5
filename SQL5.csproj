@@ -127,6 +127,11 @@
     <Resource Include="Fonts\big-shot.ttf" />
     <Resource Include="Fonts\RetroTypo.ttf" />
     <Resource Include="Fonts\Ankh-Sanctuary.ttf" />
+    <Resource Include="Fonts\mr_hamiltoneg.ttf" />
+    <Resource Include="Fonts\Balisa-FREE.ttf" />
+    <Resource Include="Fonts\The-wedding.ttf" />
+    <Resource Include="Fonts\Batista.ttf" />
+    <Resource Include="Fonts\HeartDisplayRegular.ttf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

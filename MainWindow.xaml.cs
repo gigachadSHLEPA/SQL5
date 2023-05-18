@@ -24,5 +24,7 @@ namespace SQL5
         {
             InitializeComponent();
         }
+
+
     }
 }

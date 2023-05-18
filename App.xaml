@@ -7,12 +7,12 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/Style/TxtFont.xaml"/>
                 <materialDesign:BundledTheme
                     BaseTheme="{x:Null}"
                     PrimaryColor="{x:Null}"
                     SecondaryColor="{x:Null}" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="/Style/TxtFont.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
